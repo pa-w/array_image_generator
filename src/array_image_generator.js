@@ -54,7 +54,7 @@ Array_Image_Generator.prototype.render = function (step) {
 								var groups = words.map ( (e, i) => { return i % max_words === 0 ? words.slice (i, i + max_words) : null }).filter ((e) => {return e;}) 
 
 								for (var g in groups ) {
-									img.stringFT (colors [color], me._fonts [font], size, 0, x, y, groups [g].join (' ') );
+									img.stringFT (colors [color], me._fonts [font], size, 0, parseInt (x), parseInt (y), groups [g].join (' ') );
 									y += size + (size * .25);
 								}
 							}
