@@ -59,7 +59,7 @@ Array_Image_Generator.prototype.render = function (step) {
 								}
 							}
 						} else { 
-							img.stringFT (colors [color], me._fonts [font], size, 0, x, y, text);
+							img.stringFT (colors [color], me._fonts [font], size, 0, parseInt (x), parseInt (y), text);
 						}
 					}
 
